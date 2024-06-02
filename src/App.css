@@ -1,14 +1,70 @@
+/* Estilos generales de la aplicación */
 .App {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3e5f5; /* Fondo violeta claro */
+  margin: 0;
 }
 
+/* Contenedor del anotador */
+.notepad {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+/* Entrada y botón */
 input {
   margin-right: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: calc(100% - 60px); /* Ajusta el tamaño del input */
 }
 
 button {
   margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #673ab7; /* Color de botón violeta */
+  color: white;
   cursor: pointer;
 }
+
+button:hover {
+  background-color: #5e35b1;
+}
+
+/* Lista de tareas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li button {
+  background-color: #e57373;
+}
+
+li button:hover {
+  background-color: #ef5350;
+}
+

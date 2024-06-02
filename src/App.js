@@ -15,8 +15,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Anotador</h1>
-      <TodoList todos={todos} addTodo={addTodo} deleteTodo={deleteTodo} />
+      <div className="notepad">
+        <h1>Anotador</h1>
+        <TodoList todos={todos} addTodo={addTodo} deleteTodo={deleteTodo} />
+      </div>
     </div>
   );
 }
